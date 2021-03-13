@@ -1,0 +1,23 @@
+@import "./resets";
+@import "./variables";
+@import "./layout";
+.app{
+    display:flex;
+    // background-image:url('/assets/mockup/image.png');
+    // background-repeat:no-repeat;
+    header{
+        height:100vh
+    }
+    main{
+        width:100vw;
+        margin-top:$header-height;
+        margin-left:$header-height;
+    }
+}
+a{
+    text-decoration:none;
+}
+.wrapper{
+    min-height:calc(100vh - #{$header-height});
+    background:$wrapper-bg-color;
+}

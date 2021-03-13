@@ -1,0 +1,51 @@
+@import './../../styles/variables';
+
+.side-nav {
+  position: fixed;
+  // margin-top: $header-height;
+  display: flex;
+  flex-direction: column;
+  width: $sidenav-width;
+  // height: calc(100vh - #{$header-height});
+  height:100vh;
+  -webkit-box-shadow: 3px 0px 14px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 0px 14px -3px rgba(0,0,0,0.75);
+  box-shadow: 3px 0px 14px -3px rgba(0,0,0,0.75);
+  &-item {
+    font-size: .8rem;
+    text-align: center;
+    padding: 25px 0;
+    color:$secondary-color;
+    &__icon {
+      display: block;
+      height: 30px;
+      width: 100%;
+    }
+    &.active {
+      color: $active-bg-color;
+      background:lighten($active-font-color,68%);
+      border-left: 3px solid $active-border-color;
+      font-weight:bold;
+    }
+  }
+}
+
+.side-nav{
+  .side-nav-item:first-child{
+     border:none;
+    background:inherit;
+    height:$header-height;
+    img{
+      width:auto;
+      height:auto;
+      margin:auto;
+    }
+  }
+}
+
+
+ 
+ 
+
+
+

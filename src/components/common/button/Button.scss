@@ -1,0 +1,40 @@
+@import './../../../styles/_variables';
+
+.btn{
+    cursor: pointer;
+    display: inline-flex;
+    border:none;
+    outline: none;
+    background-color:$white;
+    span{
+        img{
+            width: 100%;
+        }
+    }
+}
+.btn-upload:hover{
+    background-color:$active-bg-color;
+    color:$white;
+    transition:all .5s ease-in-out;
+    span{
+        img{
+            width: 100%;
+        }
+    }
+}
+  .btn-invert{
+        span{
+            img{
+                transform:rotate(180deg);
+            }
+        }
+    }
+    .btn-upload{
+        width:200px;
+        height:200px;
+        background:white;
+        font-weight:bold;
+        font-size:1rem;
+        outline:none;
+        border:none;
+    }
