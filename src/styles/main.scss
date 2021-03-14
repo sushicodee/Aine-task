@@ -2,6 +2,7 @@
 @import "./variables";
 @import "./layout";
 .app{
+    color:$primary-color;
     display:flex;
     // background-image:url('/assets/mockup/image.png');
     // background-repeat:no-repeat;
@@ -20,4 +21,13 @@ a{
 .wrapper{
     min-height:calc(100vh - #{$header-height});
     background:$wrapper-bg-color;
+}
+
+//svg
+.highlight {
+  stroke: $secondary-color;
+}
+
+.highlight:hover {
+  stroke: $active-bg-color;
 }

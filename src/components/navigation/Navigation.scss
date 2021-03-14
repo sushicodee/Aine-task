@@ -21,6 +21,10 @@
                }
            }
        }
+       .btn-back:hover{
+           color:$active-bg-color;
+           transition:all .5s ease-in-out
+       }
    }
   .navigation-content{
       width:70%;

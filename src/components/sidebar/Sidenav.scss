@@ -8,9 +8,9 @@
   width: $sidenav-width;
   // height: calc(100vh - #{$header-height});
   height:100vh;
-  -webkit-box-shadow: 3px 0px 14px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 0px 14px -3px rgba(0,0,0,0.75);
-  box-shadow: 3px 0px 14px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 0px 20px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 3px 0px 20px 0px rgba(0,0,0,0.48);
+  box-shadow: 3px 0px 20px 0px rgba(0,0,0,0.48);
   &-item {
     font-size: .8rem;
     text-align: center;
@@ -26,6 +26,9 @@
       background:lighten($active-font-color,68%);
       border-left: 3px solid $active-border-color;
       font-weight:bold;
+      .highlight{
+        background-color:$active-bg-color;
+      }
     }
   }
 }
@@ -42,6 +45,7 @@
     }
   }
 }
+
 
 
  
